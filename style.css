@@ -1,0 +1,258 @@
+/*
+Theme Name: LabFortyOneNew
+Author: Fernando
+
+Description:
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body{
+  color: #67686A;
+  font-family: 'Palatino Linotype', serif;
+}
+
+header{
+    height: 200px;
+}
+
+.logo{
+    background-image: url('images/lab41logo.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px; 
+}
+
+footer{
+  text-align: center;
+
+}
+/*############ ############ ##############*/
+/*############     Menu     ##############*/
+/*############ ############ ##############*/
+menu{
+  display: inline;
+  position: relative;
+}
+.content{
+    position: relative;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #67686A;
+  margin-left: 10px;
+  font-size: 1.8em;
+}
+.menu a:hover{
+  border-bottom: 1px solid #67686A;
+}
+.menu .dropdown{
+  color: #67686A;
+  font-size: 1.8em;
+  margin-left: 10px;
+  display: inline;
+}
+.menu .dropdown:hover{
+  border-bottom: 1px solid #67686A;
+}
+
+.menu .dropdown ul{
+  list-style: none;
+  display: none;
+}
+.menu .dropdown:hover > ul{
+  display:block;
+  position: absolute;
+  font-size: 1em;
+ /* left: 23%;
+  top: 85%;*/
+}
+.menu .dropdown ul a{
+  font-size: 1em;
+  /*border-left: 1px solid #67686A;*/
+}
+
+/*############ ############ ##############*/
+/*############  Lab Objects ##############*/
+/*############ ############ ##############*/
+
+.lab_objects{
+ position: relative;
+}
+
+.lab_objects .grid_3, .lab_objects .grid_4, .lab_objects .grid_5{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.mouse{
+    position: absolute;
+    right: 82px;
+}
+.pen{
+    position: absolute;
+    bottom: 0px;
+}
+.wheel{
+    position: absolute;
+    right: 240px;
+    top: 78px;
+}
+.fernando:hover .wheel {
+    -webkit-transition: -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    -ms-webkit-transition: -webkit-transform 2s;
+    transition: transform 2s;
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+.alex:hover .pen{
+    animation: pen-shake 2s infinit;
+    -webkit-animation: pen-shake 2s; /* Safari and Chrome */
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.alex:hover .liquid {
+    border-bottom: 73px solid rgba(233, 64, 35, 0.30);
+}
+.adam{
+    
+}
+.adam:hover .flash{
+   animation: flash 0.4s;
+    -webkit-animation: flash 0.4s; /* Safari and Chrome */ 
+}
+.flash{
+    position: absolute;
+    height: 235px;
+    left: 37px;
+    top: 60px;
+    width: 296px;
+    background-color: rgba(255, 255, 255, 0.00);
+    border-radius: 200px;
+}
+
+.liquid{
+    bottom: 3px;
+    left: 85px;
+    border-bottom: 73px solid rgba(233, 64, 35, 0.00);
+	border-left: 33px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 40px;
+    border-radius: 27px;
+    position: absolute;
+    z-index: 99999;
+    -webkit-transition: border-bottom  4s; /* For Safari 3.1 to 6.0 */
+    -ms-webkit-transition:border-bottom 4s;
+    transition: border-bottom 4s;
+}
+
+.hidden-div{
+    display: none;
+}
+
+
+/*############ ############ ##############*/
+/*############  Worker info ##############*/
+/*############ ############ ##############*/
+
+.alex-info{
+    position: relative;
+    background-color: rgba(233, 64, 35, 1.00);
+    overflow: hidden;
+    width: 500px;
+    border-radius: 20px;
+    left: 510px;
+    bottom: 250px;
+    padding: 20px;
+    height: 0px;
+    visibility: hidden;
+}
+.visible-info{
+    visibility: visible;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    height: 400px;
+    
+}
+
+/*############ ############ ##############*/
+/*############  Animations  ##############*/
+/*############ ############ ##############*/
+
+@keyframes flash
+{
+from {background-color: rgba(255, 255, 255, 1.00);}
+to {background-color: rgba(255, 255, 255, 0.00);}
+}
+@-webkit-keyframes flash /* Safari and Chrome */
+{
+from {background-color: rgba(255, 255, 255, 1.00);}
+to {background-color: rgba(255, 255, 255, 0.00);}
+}
+
+@keyframes pen-shake
+{
+   0% { 
+        -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+        -ms-webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg); /* Safari */
+        transform: rotate(15deg);
+    }
+    50% { 
+            -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+            -ms-webkit-transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            -ms-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg); /* Safari */
+            transform: rotate(-15deg);
+        }
+    100% { 
+        -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+        -ms-webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg); /* Safari */
+        transform: rotate(15deg);
+    }
+}
+
+@-webkit-keyframes pen-shake /* Safari and Chrome */
+{
+   0% { 
+        -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+        -ms-webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg); /* Safari */
+        transform: rotate(15deg);
+
+    }
+    50% { 
+            -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+            -ms-webkit-transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            -ms-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg); /* Safari */
+            transform: rotate(-15deg);
+
+        }
+    100% { 
+        -webkit-transition: -webkit-transform 0.5s; /* For Safari 3.1 to 6.0 */
+        -ms-webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg); /* Safari */
+        transform: rotate(15deg);
+    }
+}
