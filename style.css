@@ -9,42 +9,60 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 body{
-  color: #67686A;
-  font-family: 'Palatino Linotype', serif;
+    color: #67686A;
+    font-family: 'Palatino Linotype', serif;
 }
 
 header{
-    height: 200px;
+    overflow: hidden;
+    margin: 40px;
+    border-bottom: 1px dashed;
+    padding-bottom: 30px; 
 }
 
 .logo{
     background-image: url('images/lab41logo.png');
     background-repeat: no-repeat;
-    width: 200px;
-    height: 50px; 
+    width: 216px;
+    height: 51px; 
 }
 
 footer{
-  text-align: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #67686A;
 
 }
 .content{
-    min-height: 900px;
+    min-height: 500px;
 }
 /*############ ############ ##############*/
 /*############     Menu     ##############*/
 /*############ ############ ##############*/
 .menu{
-  text-align: right;
+    text-align: right;
+    top: 35px;
+    position: relative;
 }
 .menu a{
-  text-decoration: none;
-  color: #67686A;
-  margin-left: 10px;
-  font-size: 1.8em;
+    text-decoration: none;
+    color: #67686A;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
 }
-.menu a:hover{
-  border-bottom: 1px solid #67686A;
+.mask {
+    position: absolute;
+    top:-4px;
+    right:0px;
+    width:50%;
+    height: 4px;
+    background-color:#fff;
+}
+.menu links:hover{
+  border-top: 4px solid #6DC17A;
 }
 .menu .dropdown{
   color: #67686A;
@@ -52,10 +70,6 @@ footer{
   margin-left: 10px;
   display: inline;
 }
-.menu .dropdown:hover{
-  border-bottom: 1px solid #67686A;
-}
-
 .menu .dropdown ul{
   list-style: none;
   display: none;
@@ -75,21 +89,23 @@ footer{
 /*############ ############ ##############*/
 /*############  Lab Objects ##############*/
 /*############ ############ ##############*/
-
+.tag-line{
+   text-align: center;
+}
 .lab_objects{
- position: relative;
+    position: relative;
 }
 
 .lab_objects .grid_3, .lab_objects .grid_4, .lab_objects .grid_5{
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 
 .mouse{
     position: absolute;
-    right: 5px;
+    right: 3px;
 }
 .pen{
     position: absolute;
@@ -115,14 +131,11 @@ footer{
     -webkit-animation-iteration-count: infinite;
 }
 .alex:hover .liquid {
-    border-bottom: 73px solid rgba(233, 64, 35, 0.30);
-}
-.adam{
-    
+    border-bottom: 73px solid rgba(233, 64, 35, 0.61);
 }
 .adam:hover .flash{
    animation: flash 0.4s;
-    -webkit-animation: flash 0.4s; /* Safari and Chrome */ 
+   -webkit-animation: flash 0.4s; /* Safari and Chrome */ 
 }
 .flash{
     position: absolute;
@@ -159,14 +172,16 @@ footer{
 /*############  Worker info ##############*/
 /*############ ############ ##############*/
 
-.alex-info{
+.info{
     position: relative;
     background-color: #6DC17A;
     overflow: hidden;
-    border-radius: 20px;
     padding: 20px;
     height: 0px;
     visibility: hidden;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         10px;
 }
 .visible-info{
     visibility: visible;
@@ -175,16 +190,25 @@ footer{
     -ms-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    min-height: 400px;
-    
+    min-height: 200px;
+}
+.visible-info:before {
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #6DC17A;
+    border-bottom: 13px solid transparent;
 }
 .close-button{
     width: 20px;
     height: 20px;
-    border: 1px solid #67686A;
+    border: 1px solid #EA4025;
     border-radius: 20px;
     float: right; 
-    color: #67686A;
+    color: #EA4025;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1.2em;
     font-weight: bold;

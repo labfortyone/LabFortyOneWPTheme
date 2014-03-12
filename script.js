@@ -5,24 +5,27 @@ document.addEventListener('click', function (e) {
     if (text.className === "liquid" || text.className === "pen" || text.className === "glass") {
         hiddenDiv("add", "adam");
         hiddenDiv("add", "fernando");
-        visibility("add");
+        infoVisibility("add");
+        fillInfo("Alex");
     } else if (text.className === "flash" || text.className === "camera") {
         hiddenDiv("add", "alex");
         hiddenDiv("add", "fernando");
-        visibility("add");
+        infoVisibility("add");
+        fillInfo("Adam");
     } else if (text.className === "mouse" || text.className === "computer" || text.className === "wheel") {
         hiddenDiv("add", "alex");
         hiddenDiv("add", "adam");
-        visibility("add");
+        infoVisibility("add");
+        fillInfo("Fernando");
     } else if (text.className === "x" || text.className === "close-button") {
         hiddenDiv("remove", "alex");
         hiddenDiv("remove", "adam");
         hiddenDiv("remove", "fernando");
-        visibility("remove");
+        infoVisibility("remove");
     }
 }, false);
-function visibility(option){
-    var alex_info = document.getElementsByClassName('alex-info')[0];
+function infoVisibility(option){
+    var alex_info = document.getElementsByClassName('info')[0];
     if (option === "add") {
         alex_info.classList.add('visible-info');
     }else if(option === "remove"){
@@ -35,5 +38,9 @@ function hiddenDiv(option, name){
     }else if(option === "remove"){
         document.getElementsByClassName(name)[0].classList.remove('hidden-div');
     }
+}
+function fillInfo(name){
+    document.getElementById("worker-title").innerHTML = name;
+    document.getElementById("worker-text").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non justo libero. Donec eget dolor sagittis, porttitor nibh id, accumsan est. Phasellus vitae pretium ligula. Morbi porta metus sed ipsum dignissim ornare. Maecenas eu orci sapien. Morbi hendrerit et risus nec placerat. Sed placerat odio eu est faucibus iaculis. Pellentesque adipiscing nec urna in aliquet. Maecenas eros sem, semper ac tincidunt a, blandit non tortor. Nunc faucibus quam non fringilla posuere. Aenean a augue tellus. Curabitur et tellus at sapien egestas pharetra. Sed luctus sollicitudin turpis. Phasellus euismod est sit amet molestie pretium. Vivamus interdum lacus ac nibh semper auctor.";
 }
 

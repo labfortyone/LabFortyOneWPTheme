@@ -1,17 +1,19 @@
-<a href="#">Home</a>
-
-<a href="#">About</a>
-
-<div class="dropdown">Contact
-<ul>
-    <li>
-        <a href="#">Fernando</a>
-    </li>
-    <li>
-        <a href="#">Alex</a>
-    </li>
-    <li>
-        <a href="#">Adam</a>
-    </li>
-</ul></div>
-<a href="#">Work</a>
+<div class="container_12">
+    <div class="grid_8"></div>
+    <div class="grid_1 links">
+        <span class="mask"></span>
+        <a href="#">Home</a>
+    </div>
+    <div class="grid_1 links">
+        <span class="mask"></span>
+        <a href="#">About</a>
+    </div>
+    <div class="grid_1 links">
+        <span class="mask"></span>
+        <a href="#">Contact</a>
+    </div>
+    <div class="grid_1 links">
+        <span class="mask"></span>
+        <a href="#">Work</a>
+    </div>
+</div>
