@@ -28,17 +28,15 @@ footer{
   text-align: center;
 
 }
+.content{
+    min-height: 900px;
+}
 /*############ ############ ##############*/
 /*############     Menu     ##############*/
 /*############ ############ ##############*/
-menu{
-  display: inline;
-  position: relative;
+.menu{
+  text-align: right;
 }
-.content{
-    position: relative;
-}
-
 .menu a{
   text-decoration: none;
   color: #67686A;
@@ -61,13 +59,13 @@ menu{
 .menu .dropdown ul{
   list-style: none;
   display: none;
-}
-.menu .dropdown:hover > ul{
-  display:block;
   position: absolute;
   font-size: 1em;
- /* left: 23%;
-  top: 85%;*/
+  right: 26%;
+}
+.menu .dropdown:hover > ul{
+  display:block;    
+
 }
 .menu .dropdown ul a{
   font-size: 1em;
@@ -91,15 +89,15 @@ menu{
 
 .mouse{
     position: absolute;
-    right: 82px;
+    right: 5px;
 }
 .pen{
     position: absolute;
-    bottom: 0px;
+    right: 5px;
 }
 .wheel{
     position: absolute;
-    right: 240px;
+    right: 161px;
     top: 78px;
 }
 .fernando:hover .wheel {
@@ -163,12 +161,9 @@ menu{
 
 .alex-info{
     position: relative;
-    background-color: rgba(233, 64, 35, 1.00);
+    background-color: #6DC17A;
     overflow: hidden;
-    width: 500px;
     border-radius: 20px;
-    left: 510px;
-    bottom: 250px;
     padding: 20px;
     height: 0px;
     visibility: hidden;
@@ -180,8 +175,25 @@ menu{
     -ms-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    height: 400px;
+    min-height: 400px;
     
+}
+.close-button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #67686A;
+    border-radius: 20px;
+    float: right; 
+    color: #67686A;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.close-button .x{
+    position: relative;
+    bottom: 1.5px;
 }
 
 /*############ ############ ##############*/

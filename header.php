@@ -11,14 +11,13 @@
   </head>
 
   <body>
-    <div class="content">
-        <header>
-          <div class="container_12">
-            <div class="grid_3 alpha">
-              <div class="logo"></div>
-            </div>
-            <div class="grid_9 omega menu">
-                <?php get_sidebar()?>
-            </div>
-          </div>
-        </header>
+    <header>
+        <div class="container_12">
+        <div class="grid_3 alpha">
+            <div class="logo"></div>
+        </div>
+        <div class="grid_9 omega menu">
+            <?php get_sidebar()?>
+        </div>
+        </div>
+    </header>

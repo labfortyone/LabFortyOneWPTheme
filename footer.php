@@ -1,6 +1,5 @@
       <footer>
         2014 Copyright
-      </footer> 
-    </div>
+      </footer>
   </body>
 </html>
