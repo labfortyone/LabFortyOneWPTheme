@@ -3,16 +3,16 @@
 <div class="content">
     <div class="container_12">
         <div class="grid_12 tag-line">
-            Internally acclaimed <br> the best designers in the world.
+            <h2>Internally acclaimed <br> the best designers in the world.</h2>
         </div>
     </div>
     <div class="container_12 lab_objects">
-        <div class="grid_4 alpha alex">
+        <div class="grid_3 alpha alex">
             <div class="liquid"></div>
             <img class="glass" alt="glass" src="wp-content/themes/LabFortyOneNew/images/bottle.png">
             <img class="pen" alt="pen" src="wp-content/themes/LabFortyOneNew/images/pen.png">
         </div>
-        <div class="grid_4 adam">
+        <div class="grid_5 adam">
             <div class="flash"></div>
             <img class="camera" alt="camera" src="wp-content/themes/LabFortyOneNew/images/camera.png">
         </div>
